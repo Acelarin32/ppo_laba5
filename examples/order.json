@@ -1,0 +1,5 @@
+{
+  "customer": "  STUDENT@example.org  ",
+  "items": [{"sku": "BOOK", "quantity": 2, "price": "12.50"}],
+  "declared_total": "25.00"
+}

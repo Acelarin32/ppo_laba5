@@ -1,0 +1,56 @@
+<mxfile host="Electron">
+  <diagram id="03 — UML пакетов: срез 17 классов" name="03 — UML пакетов: срез 17 классов">
+    <mxGraphModel dx="2159" dy="1284" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1350" background="#141B26" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="schema" parent="1" style="shape=folder;tabWidth=100;tabHeight=25;html=1;strokeColor=#FFFFFF;fillColor=#202735;fontColor=#FFFFFF;fontFamily=Arial;fontSize=18;whiteSpace=wrap;spacing=10;" value="&lt;b&gt;«module» schema.py&lt;/b&gt;&lt;br&gt;&lt;br&gt;Schema&lt;br&gt;SchemaMeta&lt;br&gt;SchemaOpts&lt;br&gt;&lt;br&gt;Классов: 3" vertex="1">
+          <mxGeometry height="370" width="500" x="260" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fields" parent="1" style="shape=folder;tabWidth=100;tabHeight=25;html=1;strokeColor=#FFFFFF;fillColor=#202735;fontColor=#FFFFFF;fontFamily=Arial;fontSize=18;whiteSpace=wrap;spacing=10;" value="&lt;b&gt;«module» fields.py&lt;/b&gt;&lt;br&gt;&lt;br&gt;Email&lt;br&gt;Field&lt;br&gt;Integer&lt;br&gt;List&lt;br&gt;Nested&lt;br&gt;Number&lt;br&gt;String&lt;br&gt;&lt;br&gt;Классов: 7" vertex="1">
+          <mxGeometry height="370" width="500" x="1000" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="validate" parent="1" style="shape=folder;tabWidth=100;tabHeight=25;html=1;strokeColor=#FFFFFF;fillColor=#202735;fontColor=#FFFFFF;fontFamily=Arial;fontSize=18;whiteSpace=wrap;spacing=10;" value="&lt;b&gt;«module» validate.py&lt;/b&gt;&lt;br&gt;&lt;br&gt;And&lt;br&gt;Email&lt;br&gt;Length&lt;br&gt;Range&lt;br&gt;&lt;br&gt;Классов: 4" vertex="1">
+          <mxGeometry height="370" width="500" x="1760" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="errors" parent="1" style="shape=folder;tabWidth=100;tabHeight=25;html=1;strokeColor=#FFFFFF;fillColor=#202735;fontColor=#FFFFFF;fontFamily=Arial;fontSize=18;whiteSpace=wrap;spacing=10;" value="&lt;b&gt;«module» error_store.py&lt;/b&gt;&lt;br&gt;&lt;br&gt;ErrorStore&lt;br&gt;&lt;br&gt;Классов: 1" vertex="1">
+          <mxGeometry height="370" width="500" x="260" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="exceptions" parent="1" style="shape=folder;tabWidth=100;tabHeight=25;html=1;strokeColor=#FFFFFF;fillColor=#202735;fontColor=#FFFFFF;fontFamily=Arial;fontSize=18;whiteSpace=wrap;spacing=10;" value="&lt;b&gt;«module» exceptions.py&lt;/b&gt;&lt;br&gt;&lt;br&gt;ValidationError&lt;br&gt;&lt;br&gt;Классов: 1" vertex="1">
+          <mxGeometry height="370" width="500" x="1000" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="ordered" parent="1" style="shape=folder;tabWidth=100;tabHeight=25;html=1;strokeColor=#FFFFFF;fillColor=#202735;fontColor=#FFFFFF;fontFamily=Arial;fontSize=18;whiteSpace=wrap;spacing=10;" value="&lt;b&gt;«module» orderedset.py&lt;/b&gt;&lt;br&gt;&lt;br&gt;OrderedSet&lt;br&gt;&lt;br&gt;Классов: 1" vertex="1">
+          <mxGeometry height="370" width="500" x="1760" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="dep0" edge="1" parent="1" source="schema" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Arial;fontSize=16;fontColor=#172B36;strokeColor=#FFFFFF;strokeWidth=2;labelBackgroundColor=#141B26;dashed=1;endArrow=open;endFill=0;fontColor=#FFFFFF;" target="fields" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep1" edge="1" parent="1" source="fields" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Arial;fontSize=16;fontColor=#172B36;strokeColor=#FFFFFF;strokeWidth=2;labelBackgroundColor=#141B26;dashed=1;endArrow=open;endFill=0;fontColor=#FFFFFF;" target="validate" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep2" edge="1" parent="1" source="schema" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Arial;fontSize=16;fontColor=#172B36;strokeColor=#FFFFFF;strokeWidth=2;labelBackgroundColor=#141B26;dashed=1;endArrow=open;endFill=0;fontColor=#FFFFFF;" target="errors" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep3" edge="1" parent="1" source="fields" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Arial;fontSize=16;fontColor=#172B36;strokeColor=#FFFFFF;strokeWidth=2;labelBackgroundColor=#141B26;dashed=1;endArrow=open;endFill=0;fontColor=#FFFFFF;" target="exceptions" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep4" edge="1" parent="1" source="schema" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Arial;fontSize=16;fontColor=#172B36;strokeColor=#FFFFFF;strokeWidth=2;labelBackgroundColor=#141B26;dashed=1;endArrow=open;endFill=0;fontColor=#FFFFFF;" target="exceptions" value="">
+          <mxGeometry relative="1" x="0.0875" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="620" />
+              <mxPoint x="1130" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dep5" edge="1" parent="1" source="schema" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Arial;fontSize=16;fontColor=#172B36;strokeColor=#FFFFFF;strokeWidth=2;labelBackgroundColor=#141B26;dashed=1;endArrow=open;endFill=0;fontColor=#FFFFFF;" target="ordered" value="">
+          <mxGeometry relative="1" x="-0.0733" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="550" />
+              <mxPoint x="2010" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

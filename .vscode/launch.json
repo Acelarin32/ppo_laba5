@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Marshmallow: load с исходниками библиотеки",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "order_demo",
+      "args": ["--case", "valid", "--trace"],
+      "justMyCode": false,
+      "console": "integratedTerminal"
+    }
+  ]
+}
