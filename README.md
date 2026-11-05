@@ -6,7 +6,7 @@
 
 Исходники библиотеки: https://github.com/marshmallow-code/marshmallow/tree/4.0.1
 
-Исследуемый механизм: сборка Schema, путь load, Field.deserialize, вложенные схемы, валидаторы и ErrorStore. На диаграммах ровно 17 реально используемых классов библиотеки. Пользовательские Money/ItemSchema/OrderSchema/Order находятся только в демо.
+Исследуемый механизм: сборка Schema, путь load, Field.deserialize, вложенные схемы, валидаторы и ErrorStore. На диаграммах 17 используемых классов библиотеки.
 
 ## Запуск
 
@@ -25,10 +25,6 @@ py -m venv .venv
 
 ## Что открывать
 
-- `presentation/Marshmallow17-clean.pptx` — 15 слайдов с заметками.
+- `presentation/Marshmallow.pptx` — 15 слайдов с заметками.
 - `diagrams/Marshmallow-DEMO17-native.drawio` — общий draw.io, пять страниц; диаграммы также лежат отдельными файлами.
-- `docs/RESEARCH.md` — исследование архитектуры, решения, ограничения и альтернативы.
-- `docs/DEMO17_CLASSES.md` — полные поля, сигнатуры и связи 17 классов.
-- `docs/DEFENSE.md` — порядок демонстрации, дебаггер и практические упражнения.
-- `docs/SOURCE_MAP.md` — ссылки на исходники и точки останова.
 - `order_demo/schemas.py` — расширение Money, схемы и хуки.
