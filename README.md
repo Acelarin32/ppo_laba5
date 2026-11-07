@@ -25,6 +25,6 @@ py -m venv .venv
 
 ## Что открывать
 
-- `presentation/Marshmallow.pptx` — 15 слайдов с заметками.
-- `diagrams/Marshmallow-DEMO17-native.drawio` — общий draw.io, пять страниц; диаграммы также лежат отдельными файлами.
+- `presentation/Marshmallow.pptx` — 14 слайдов с заметками.
+- `diagrams/Marshmallow-DEMO17-styled.drawio` — общий draw.io, 6 страниц.
 - `order_demo/schemas.py` — расширение Money, схемы и хуки.
